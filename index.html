@@ -10,27 +10,11 @@
 <body>
     <h1>60's CountDown</h1>
     <p id="Clock-Face"></p>
+    
 
 
     <script>
-       var countdowntimer = new timmer("00").getTime();
-       
-       var x = setInterval(function() {
-
-        var now = new Date().getTime();
-        
-        var distance = countdowntimer - now;
-
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("Clock-Face").innerHTML = seconds + 's';
-
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("Clock-Face").innerHTML = "Complete"
-        }
-
-       })
+        const deadline
 
     </script>
 </body>
