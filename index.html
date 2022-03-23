@@ -8,13 +8,25 @@
     <title>Document</title>
 </head>
 <body>
+
+
     <h1>60's CountDown</h1>
     <p id="Clock-Face"></p>
-    
-
 
     <script>
-        const deadline
+
+        var count = 61;
+
+        var interval = setInterval(function()
+{
+ 
+    document.getElementById("Clock-Face").innerHTML = -- count;
+
+    if (count == 0)
+        clearInterval(interval);
+   
+}, 1000);
+
 
     </script>
 </body>
