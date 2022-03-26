@@ -12,20 +12,25 @@
 
     <h1>60's CountDown</h1>
     <p id="Clock-Face"></p>
+    <p id="Expired"></p>
 
     <script>
 
         var count = 61;
 
         var interval = setInterval(function()
-{
- 
-    document.getElementById("Clock-Face").innerHTML = -- count;
+        {
+            
+            document.getElementById("Clock-Face").innerHTML = -- count;
 
-    if (count == 0)
-        clearInterval(interval);
-   
-}, 1000);
+            
+        if (count == 0)
+                clearInterval(interval);
+           if (count == 0)
+           document.getElementById("Clock-Face").innerHTML ="Done";
+           
+        }, 1000);
+
 
 
     </script>
