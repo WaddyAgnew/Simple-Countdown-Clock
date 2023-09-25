@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+    <script src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -16,12 +16,15 @@
     <!--<button onclick="clearInterval(interval)">Stop</button>
     <button onclick="setTimeout(setInterval,6000)">Resume</button>-->
     <button id="pause">Pause</button>
-    <button id="resume">Resume</button>
+    <button id="repeat">Repeat</button>
 
-    <script>
+  <!---  <script>
 
         var count = 61;
-            
+        var intervalSec = 1000;   
+        
+        
+        
         var interval = setInterval(function()
         {
             
@@ -33,31 +36,39 @@
            if (count == 0)
            document.getElementById("Clock-Face").innerHTML ="Done";
            
-        }, 1000);
+        }, intervalSec);
+    
 
-
+       
        var pause = false;
-       var time_left;
+       
 
        // pause Clock
        function pause_clock(){
            if(!pause){
                pause = true;
+
+               
                clearInterval(interval);
-               time_left = time_remaining(count).total;
+               
            }
        }
        document.getElementById("pause").onclick = pause_clock;
 
+       
+
+
        //Resume clock
-       function resume_clock(){
+      /* function resume_clock(){
         pause = false;
-        setInterval(interval);
+        
+        interval.start();
+        
        }
-       document.getElementById("resume").onclick = resume_clock; 
+       document.getElementById("resume").onclick = resume_clock; */
 
 
 
-    </script>
+    </script> -->
 </body>
 </html>
